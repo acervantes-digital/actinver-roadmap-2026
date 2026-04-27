@@ -103,6 +103,40 @@
 
         .note-tbd { color: #92400e; background: #fef3c7; border-left: 3px solid #f59e0b; font-size: 11px; padding: 4px 8px; border-radius: 0 4px 4px 0; }
 
+        /* ── MOBILE RESPONSIVE ──────────────────────────────────── */
+        @media (max-width: 768px) {
+            /* Toggle pill wraps on mobile */
+            .toggle-pill { flex-wrap: wrap; border-radius: 12px; }
+            .toggle-pill button { font-size: 11px; padding: 5px 12px; }
+
+            /* Left panel narrower on mobile */
+            .left-panel { width: 140px; min-width: 140px; }
+
+            /* Detail panel grid stacks on mobile */
+            .detail-grid { grid-template-columns: 1fr !important; gap: 12px !important; }
+
+            /* Vision banner stacks on mobile */
+            .vision-banner { flex-direction: column !important; gap: 12px !important; }
+            .vision-banner-stat { text-align: left !important; }
+
+            /* Status cards single column */
+            .status-grid-2 { grid-template-columns: 1fr !important; }
+            .status-grid-3 { grid-template-columns: 1fr !important; }
+
+            /* Maintenance items wrap */
+            .maintenance-wrap { flex-wrap: wrap; }
+
+            /* Parked grid single col */
+            .parked-grid { grid-template-columns: 1fr !important; }
+
+            /* Top bar stacks */
+            .topbar-inner { flex-direction: column; gap: 10px; align-items: flex-start !important; }
+        }
+        @media (max-width: 480px) {
+            .left-panel { width: 120px; min-width: 120px; }
+            .toggle-pill button { font-size: 10px; padding: 4px 10px; }
+        }
+
         /* Accordion for collapsible tables */
         .accordion-content { 
             max-height: 0; overflow: hidden;
@@ -235,7 +269,6 @@
             impact: 'Percepción de marca como banco completo y mejora en navegabilidad.',
             kpis: ['NPS Digital', 'MAU', 'Usuarios Transaccionales'],
             rag: 'amarillo', ragNote: 'En preparación, inicio desarrollo mayo',
-            releaseNote: 'Estimación de liberación disponible primera semana de mayo.',
         },
         {
             id: 8, title: 'Pago de Servicios', cat: 'banco', status: 'planned',
@@ -248,7 +281,6 @@
             impact: 'Generación de hábito y recurrencia mensual en la app.',
             kpis: ['# pagos mensuales', 'Usuarios Transaccionales', 'MAU', 'AUMs cuenta eje'],
             rag: 'amarillo', ragNote: 'En preparación, inicio desarrollo mayo',
-            releaseNote: 'Estimación de liberación disponible primera semana de mayo.',
         },
         {
             id: 9, title: 'Cargo Recurrente PPR', cat: 'crossSell', status: 'planned',
@@ -262,7 +294,6 @@
             impact: 'Aumento del LTV y retención de largo plazo.',
             kpis: ['Contratos PPR', 'Domiciliaciones', 'Reducción de churn'],
             rag: 'amarillo', ragNote: 'Planificado Q3',
-            releaseNote: 'Estimación de liberación disponible primera semana de mayo.',
         },
         {
             id: 10, title: 'Cuenta Remunerada', cat: 'banco', status: 'banco2',
@@ -275,7 +306,6 @@
             impact: 'Incrementa el fondeo y posiciona a Actinver como banco de cabecera.',
             kpis: ['AUMs cuenta eje', '# Cuentas con fondeo', 'Saldo promedio'],
             rag: 'amarillo', ragNote: 'Inicio de desarrollo Q2',
-            releaseNote: 'Estimación de liberación disponible primera semana de mayo.',
         },
         {
             id: 11, title: 'Crédito Simple', cat: 'crossSell', status: 'banco2',
@@ -288,7 +318,6 @@
             impact: 'Genera ingresos por margen financiero e incrementa vinculación con el banco.',
             kpis: ['Monto colocado', '# créditos', 'Ticket promedio'],
             rag: 'amarillo', ragNote: 'Inicio de desarrollo Q2',
-            releaseNote: 'Estimación de liberación disponible primera semana de mayo.',
         },
         {
             id: 12, title: 'Apple / Google Pay', cat: 'banco', status: 'planned',
@@ -302,7 +331,6 @@
             impact: 'Incremento en uso físico (Top of Wallet) y modernización de la propuesta.',
             kpis: ['Tarjetas digitales activas', 'Transacciones Wallet', 'AUMs cuenta eje'],
             rag: 'amarillo', ragNote: 'Tentativo Q3',
-            releaseNote: 'Estimación de liberación disponible primera semana de mayo.',
         },
         {
             id: 13, title: 'Onboarding 2.0', cat: 'banco', status: 'banco2',
@@ -316,7 +344,6 @@
             impact: 'Habilita la adquisición de clientes de forma completamente digital.',
             kpis: ['# clientes digitales', 'Tasa de conversión', 'Monto fondeado'],
             rag: 'amarillo', ragNote: 'Planificado Q2-Q3',
-            releaseNote: 'Estimación de liberación disponible primera semana de mayo.',
         },
         {
             id: 14, title: 'Tarjeta de Crédito', cat: 'banco', status: 'banco2',
@@ -330,7 +357,6 @@
             impact: 'Profundiza la vinculación del cliente con el Banco e incrementa ingresos recurrentes.',
             kpis: ['# Tarjetas activas', '% En uso', 'Gasto promedio', 'Saldo revolvente'],
             rag: 'amarillo', ragNote: 'Planificado Q2-Q3',
-            releaseNote: 'Estimación de liberación disponible primera semana de mayo.',
         },
         {
             id: 15, title: 'Rediseño de Inversiones', cat: 'oper', status: 'planned',
@@ -344,7 +370,6 @@
             impact: 'Mejor experiencia de inversión y potencial incremento de AUM.',
             kpis: ['# transacciones', 'Monto operado', 'Retención'],
             rag: 'amarillo', ragNote: 'Tentativo Q4',
-            releaseNote: 'Estimación de liberación disponible primera semana de mayo.',
         },
     ];
 
@@ -356,11 +381,9 @@
     ];
 
     const MAINTENANCE = [
-        { title: 'Traducciones Inglés', desc: 'Traducción completa de la interfaz.' },
+        { title: 'Traducciones Inglés', desc: '70% de traducción: 21 de mayo.' },
         { title: 'Mejoras Operativas', desc: 'Optimización de reglas y flujos.' },
         { title: 'Incidencias', desc: 'Resolución continua de incidentes.' },
-        { title: 'Autenticación Biométrica', desc: 'Biometría en flujos críticos.' },
-        { title: 'Primeros pasos app', desc: 'Bienvenida post apertura de cuenta.' },
     ];
 
     // Bar colors by status
@@ -491,7 +514,7 @@
                         </div>
                         {/* Detail content */}
                         <div className="flex-1 px-6 py-4">
-                            <div className="grid grid-cols-3 gap-6">
+                            <div className="detail-grid grid grid-cols-3 gap-6">
                                 <div>
                                     <p className="text-[10px] uppercase font-700 text-slate-400 mb-1 tracking-wider" style={{fontWeight:700}}>Descripción</p>
                                     <p className="text-xs text-slate-600 leading-relaxed">{project.description}</p>
@@ -540,7 +563,7 @@
         );
 
         return (
-            <div className="px-8 py-6 max-w-5xl mx-auto">
+            <div className="px-4 md:px-8 py-6 max-w-5xl mx-auto">
                 {/* NPS Hero */}
                 <div className="bg-slate-900 rounded-2xl p-6 mb-6 flex items-center justify-between">
                     <div>
@@ -556,7 +579,7 @@
                 </div>
 
                 <Section title="Liberados ✓" color="#10b981">
-                    <div className="grid grid-cols-2 gap-3">
+                    <div className="status-grid-2 grid grid-cols-2 gap-3">
                         {released.map(p => (
                             <div key={p.id} className="bg-white rounded-xl p-4 border border-emerald-100 flex items-start gap-3">
                                 <div className="w-2 h-2 rounded-full bg-emerald-500 mt-1.5 flex-shrink-0"/>
@@ -571,7 +594,7 @@
                 </Section>
 
                 <Section title="En Curso" color="#3b82f6">
-                    <div className="grid grid-cols-2 gap-3">
+                    <div className="status-grid-2 grid grid-cols-2 gap-3">
                         {inprogress.map(p => (
                             <div key={p.id} className="bg-white rounded-xl p-4 border border-blue-100 flex items-start gap-3">
                                 <div className="w-2 h-2 rounded-full bg-blue-500 mt-1.5 flex-shrink-0"/>
@@ -586,7 +609,7 @@
                 </Section>
 
                 <Section title="Próximos 60 días" color="#f59e0b">
-                    <div className="grid grid-cols-3 gap-3">
+                    <div className="status-grid-3 grid grid-cols-3 gap-3">
                         {next60.map(p => (
                             <div key={p.id} className="bg-white rounded-xl p-4 border border-amber-100">
                                 <div className="flex items-center gap-2 mb-1">
@@ -601,7 +624,7 @@
                 </Section>
 
                 <Section title="Banco 2.0 — Iniciativas Transformacionales" color="#7c3aed">
-                    <div className="grid grid-cols-2 gap-3">
+                    <div className="status-grid-2 grid grid-cols-2 gap-3">
                         {banco2.map(p => (
                             <div key={p.id} className="bg-violet-50 rounded-xl p-4 border border-violet-200" style={{borderLeft:'3px solid #7c3aed'}}>
                                 <div className="flex items-center justify-between mb-1">
@@ -656,18 +679,20 @@
         return (
             <div>
                 {/* Vision 2026 banner */}
-                <div className="mx-6 mt-4 mb-2 bg-slate-900 rounded-xl px-6 py-4 flex items-center justify-between gap-6">
+                <div className="vision-banner mx-4 mt-4 mb-2 bg-slate-900 rounded-xl px-5 py-4 flex items-center justify-between gap-4">
                     <div className="flex-1">
                         <p className="text-slate-300 uppercase tracking-widest mb-1.5" style={{fontWeight:700, fontSize:'11px', letterSpacing:'0.12em'}}>Visión 2026</p>
                         <p className="text-white leading-relaxed" style={{fontWeight:400, fontSize:'15px'}}>
                             Nuestro objetivo para 2026 es transformarnos en el <span style={{color:'#60a5fa',fontWeight:600}}>banco de cabecera</span> del usuario. Este roadmap traza la ruta crítica para maximizar la <span style={{color:'#34d399',fontWeight:600}}>transaccionalidad diaria</span> y detonar la <span style={{color:'#fbbf24',fontWeight:600}}>venta cruzada inteligente</span>.
                         </p>
                     </div>
-                    <div className="flex-shrink-0 text-center">
+                    <div className="vision-banner-stat flex-shrink-0 text-center">
                         <div><p className="text-2xl font-700 text-white" style={{fontWeight:700}}>NPS → <span style={{color:'#34d399'}}>62</span></p><p className="text-[10px] text-slate-400 uppercase tracking-wider">Objetivo 2026</p></div>
                     </div>
                 </div>
 
+                {/* Mobile scroll hint */}
+                <p className="px-4 pt-2 pb-1 text-[10px] text-slate-400 md:hidden">← Desliza para ver el timeline completo →</p>
                 {/* Gantt table */}
                 <div className="overflow-x-auto gantt-scroll" ref={scrollRef}>
                     <div style={{ minWidth: 240 + TOTAL_W + 32 }}>
@@ -729,7 +754,7 @@
                 </div>
 
                 {/* Legend */}
-                <div className="px-6 py-4 border-t border-slate-100 flex flex-wrap gap-4 items-center">
+                <div className="px-4 py-4 border-t border-slate-100 flex flex-wrap gap-3 items-center">
                     <span className="text-[10px] font-700 text-slate-400 uppercase tracking-wider" style={{fontWeight:700}}>Leyenda</span>
                     {Object.entries(BAR_COLORS).map(([k, c]) => {
                         const b = STATUS_BADGE[k];
@@ -761,7 +786,7 @@
                         {showParked ? <IcChevUp size={11}/> : <IcChevDown size={11}/>}
                     </button>
                     {showParked && (
-                        <div className="mt-3 grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <div className="parked-grid mt-3 grid grid-cols-2 md:grid-cols-4 gap-3">
                             {PARKED.map(p => (
                                 <div key={p.id} className="bg-slate-50 rounded-lg p-3 border border-dashed border-slate-200">
                                     <p className="font-600 text-xs text-slate-600 mb-0.5" style={{fontWeight:600}}>{p.title}</p>
@@ -772,7 +797,7 @@
                     )}
 
                     {/* Maintenance track */}
-                    <div className="mt-4 bg-slate-800 rounded-xl p-4 flex flex-wrap items-center gap-4">
+                    <div className="maintenance-wrap mt-4 bg-slate-800 rounded-xl p-4 flex flex-wrap items-center gap-3">
                         <div className="flex items-center gap-2 min-w-[140px]">
                             <IcWrench size={14} className="text-slate-400"/>
                             <div>
@@ -802,7 +827,7 @@
             <div className="min-h-screen" style={{background:'#f5f4f0'}}>
                 {/* Top bar */}
                 <div className="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
-                    <div className="flex items-center justify-between px-6 py-3">
+                    <div className="topbar-inner flex items-center justify-between px-4 py-3 gap-3">
                         <div className="flex items-center gap-3">
                             <div className="w-7 h-7 rounded-lg bg-slate-900 flex items-center justify-center">
                                 <IcTarget size={14} className="text-white"/>
