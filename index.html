@@ -103,7 +103,7 @@
 
         .note-tbd { color: #92400e; background: #fef3c7; border-left: 3px solid #f59e0b; font-size: 11px; padding: 4px 8px; border-radius: 0 4px 4px 0; }
 
-        /* Accordion for ValorView table */
+        /* Accordion for collapsible tables */
         .accordion-content { 
             max-height: 0; overflow: hidden;
             transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
@@ -186,7 +186,7 @@
             endM: 3, endD: 23,
             milestoneM: 3, milestoneD: 13,
             milestoneLabel: 'App 13 Abr · Web 23 Abr ✓',
-            description: 'Nueva sección para descubrimiento y gestión de pólizas. Integración con Zurich.',
+            description: 'Nueva sección para descubrimiento y gestión de pólizas de seguros.',
             impact: 'Aumento en penetración de productos (cross-sell).',
             kpis: ['Índice de penetración', 'Primas emitidas', 'Visitas a sección', 'NPS Digital'],
             rag: 'verde', ragNote: 'Liberado exitosamente',
@@ -208,10 +208,10 @@
             endM: 3, endD: 28,
             milestoneM: 3, milestoneD: 28,
             milestoneLabel: '28 Abr 2026 (clientes)',
-            description: 'Contratación de crédito valor directamente desde la app. F&F productivo: 6 Abr.',
+            description: 'Contratación de crédito valor directamente desde la app.',
             impact: 'Colocación de créditos, mayor penetración de producto por cliente y LTV.',
             kpis: ['# Créditos colocados', 'Monto colocado', '% de conversión'],
-            rag: 'verde', ragNote: 'F&F exitoso, liberación a clientes 28 Abr',
+            rag: 'verde', ragNote: 'En liberación a clientes',
         },
         {
             id: 6, title: 'Visualización de Productos', cat: 'oper', status: 'inprogress',
@@ -231,10 +231,10 @@
             milestoneM: 8, milestoneD: 30,
             milestoneLabel: 'TBD Q3',
             milestoneTbd: true,
-            description: 'Rediseño total del home para reflejar el nuevo Banco Actinver. Experiencia cerrada, en refinamiento RFS.',
+            description: 'Rediseño total del home para reflejar el nuevo Banco Actinver. En preparación para desarrollo.',
             impact: 'Percepción de marca como banco completo y mejora en navegabilidad.',
             kpis: ['NPS Digital', 'MAU', 'Usuarios Transaccionales'],
-            rag: 'amarillo', ragNote: 'RFS en proceso, inicio dev mayo',
+            rag: 'amarillo', ragNote: 'En preparación, inicio desarrollo mayo',
             releaseNote: 'Estimación de liberación disponible primera semana de mayo.',
         },
         {
@@ -244,10 +244,10 @@
             milestoneM: 8, milestoneD: 30,
             milestoneLabel: 'TBD Q3',
             milestoneTbd: true,
-            description: 'Hub centralizado para pago de servicios (luz, agua, internet, tarjetas). Experiencia cerrada, en refinamiento RFS.',
+            description: 'Hub centralizado para pago de servicios (luz, agua, internet, tarjetas). En preparación para desarrollo.',
             impact: 'Generación de hábito y recurrencia mensual en la app.',
             kpis: ['# pagos mensuales', 'Usuarios Transaccionales', 'MAU', 'AUMs cuenta eje'],
-            rag: 'amarillo', ragNote: 'RFS en proceso, inicio dev mayo',
+            rag: 'amarillo', ragNote: 'En preparación, inicio desarrollo mayo',
             releaseNote: 'Estimación de liberación disponible primera semana de mayo.',
         },
         {
@@ -258,10 +258,10 @@
             milestoneLabel: 'TBD Q3',
             milestoneTbd: true,
             startNote: 'Inicio sujeto a capacidad y priorización vs proyectos 2.0.',
-            description: 'Plan Personal de Retiro con cargo recurrente domiciliado. Proveedor seleccionado, experiencia cerrada.',
+            description: 'Plan Personal de Retiro con cargo recurrente domiciliado.',
             impact: 'Aumento del LTV y retención de largo plazo.',
             kpis: ['Contratos PPR', 'Domiciliaciones', 'Reducción de churn'],
-            rag: 'amarillo', ragNote: 'Tentativo, pendiente priorización vs 2.0',
+            rag: 'amarillo', ragNote: 'Planificado Q3',
             releaseNote: 'Estimación de liberación disponible primera semana de mayo.',
         },
         {
@@ -274,7 +274,7 @@
             description: 'Atrae y retiene saldos a costo competitivo. Ancla de valor del nuevo banco. Inicio de desarrollo 15 mayo.',
             impact: 'Incrementa el fondeo y posiciona a Actinver como banco de cabecera.',
             kpis: ['AUMs cuenta eje', '# Cuentas con fondeo', 'Saldo promedio'],
-            rag: 'amarillo', ragNote: 'Inicio dev 15 mayo',
+            rag: 'amarillo', ragNote: 'Inicio de desarrollo Q2',
             releaseNote: 'Estimación de liberación disponible primera semana de mayo.',
         },
         {
@@ -287,7 +287,7 @@
             description: 'Soluciones de liquidez oportunas para el cliente desde la app. Inicio de desarrollo 15 mayo.',
             impact: 'Genera ingresos por margen financiero e incrementa vinculación con el banco.',
             kpis: ['Monto colocado', '# créditos', 'Ticket promedio'],
-            rag: 'amarillo', ragNote: 'Inicio dev 15 mayo',
+            rag: 'amarillo', ragNote: 'Inicio de desarrollo Q2',
             releaseNote: 'Estimación de liberación disponible primera semana de mayo.',
         },
         {
@@ -315,7 +315,7 @@
             description: 'Nuevo flujo de apertura de cuentas completamente digital. Posterior a proyectos 2.0 prioritarios.',
             impact: 'Habilita la adquisición de clientes de forma completamente digital.',
             kpis: ['# clientes digitales', 'Tasa de conversión', 'Monto fondeado'],
-            rag: 'amarillo', ragNote: 'Tentativo fin Q2',
+            rag: 'amarillo', ragNote: 'Planificado Q2-Q3',
             releaseNote: 'Estimación de liberación disponible primera semana de mayo.',
         },
         {
@@ -329,7 +329,7 @@
             description: 'Tarjeta de crédito Actinver en app. Posterior a proyectos 2.0 prioritarios.',
             impact: 'Profundiza la vinculación del cliente con el Banco e incrementa ingresos recurrentes.',
             kpis: ['# Tarjetas activas', '% En uso', 'Gasto promedio', 'Saldo revolvente'],
-            rag: 'amarillo', ragNote: 'Tentativo fin Q2',
+            rag: 'amarillo', ragNote: 'Planificado Q2-Q3',
             releaseNote: 'Estimación de liberación disponible primera semana de mayo.',
         },
         {
@@ -546,11 +546,9 @@
                     <div>
                         <p className="text-slate-400 text-xs uppercase tracking-widest mb-1 font-600" style={{fontWeight:600}}>NPS Banca Electrónica</p>
                         <div className="flex items-end gap-3">
-                            <span className="text-5xl font-700 text-white" style={{fontWeight:700}}>56</span>
                             <div className="mb-1">
-                                <span className="text-slate-400 text-sm">→</span>
-                                <span className="text-emerald-400 text-2xl font-700 ml-2" style={{fontWeight:700}}>62</span>
-                                <span className="text-slate-500 text-xs ml-1">objetivo 2026</span>
+                                <span className="text-emerald-400 text-4xl font-700" style={{fontWeight:700}}>62</span>
+                                <span className="text-slate-500 text-sm ml-2">objetivo 2026</span>
                             </div>
                         </div>
                     </div>
@@ -666,7 +664,7 @@
                         </p>
                     </div>
                     <div className="flex-shrink-0 text-center">
-                        <div><p className="text-2xl font-700 text-white" style={{fontWeight:700}}>56 → <span style={{color:'#34d399'}}>62</span></p><p className="text-[10px] text-slate-400 uppercase tracking-wider">NPS objetivo 2026</p></div>
+                        <div><p className="text-2xl font-700 text-white" style={{fontWeight:700}}>NPS → <span style={{color:'#34d399'}}>62</span></p><p className="text-[10px] text-slate-400 uppercase tracking-wider">Objetivo 2026</p></div>
                     </div>
                 </div>
 
@@ -795,254 +793,6 @@
     };
 
 
-    // ── MODELO DE VALOR VIEW ────────────────────────────────────────────────
-    const ValorView = () => {
-        const [isTableOpen, setIsTableOpen] = useState(false);
-
-        const pillars = [
-            {
-                title: 'Principalidad y Fondeo',
-                subtitle: 'Adopción Digital',
-                theme: 'blue',
-                thesis: 'Una plataforma sin fricciones incentiva la confianza y el uso recurrente. Al eliminar los obstáculos motivacionales, convertimos la transaccionalidad en permanencia, logrando que los saldos a la vista crezcan de forma natural.',
-                drivers: [
-                    { name: 'Pagarés', date: 'Q2' },
-                    { name: 'SPEI Inmediato', date: 'Q1' },
-                    { name: 'Pago de Servicios', date: 'Q3' },
-                    { name: 'Nuevo Dashboard', date: 'Q3' },
-                ],
-                kpis: [
-                    { label: 'Usuarios Activos (MAU)', detail: '70% sobre enrolados' },
-                    { label: 'Usuarios Transaccionales', detail: '50% sobre activos' },
-                ],
-                pnlImpact: 'Costo de Fondeo',
-            },
-            {
-                title: 'Ingreso Directo',
-                subtitle: 'Revenue & P&L',
-                theme: 'purple',
-                thesis: 'Monetización de la base digital mediante la venta cruzada automatizada y de fácil contratación, logrando un alcance masivo con un costo de adquisición marginal cercano a cero.',
-                drivers: [
-                    { name: 'Crédito Valor', date: 'Q1' },
-                    { name: 'Seguros', date: 'Q1' },
-                    { name: 'PPR Domiciliado', date: 'Q2–Q3' },
-                    { name: 'Actinver Trade', date: 'ON' },
-                ],
-                kpis: [
-                    { label: 'Tasa de Conversión', detail: '25% General (Mix)' },
-                ],
-                pnlImpact: 'Margen Financiero',
-            },
-            {
-                title: 'Eficiencia Operativa',
-                subtitle: 'OpEx Savings',
-                theme: 'slate',
-                thesis: 'Desviar carga operativa de canales caros (CF/CAT) a canales digitales de autoservicio para mejorar el margen operativo.',
-                drivers: [
-                    { name: 'Vinculación Banca Móvil', date: 'Q1' },
-                    { name: 'Enrolamiento Biométrico', date: 'Pendiente' },
-                    { name: 'Rediseño Inversiones', date: 'Q4' },
-                ],
-                kpis: [
-                    { label: 'Reducción Contacto CAT', detail: '-50% Token Reset' },
-                ],
-                pnlImpact: 'Gastos Operativos',
-            },
-        ];
-
-        const themeStyles = {
-            blue:   { bg:'bg-blue-50',   border:'border-blue-200',   text:'text-blue-800',   iconBg:'bg-blue-600',   accent:'border-blue-500',   dateBg:'bg-blue-100 text-blue-700'   },
-            purple: { bg:'bg-purple-50', border:'border-purple-200', text:'text-purple-800', iconBg:'bg-purple-600', accent:'border-purple-500', dateBg:'bg-purple-100 text-purple-700' },
-            slate:  { bg:'bg-slate-100', border:'border-slate-300',  text:'text-slate-800',  iconBg:'bg-slate-600',  accent:'border-slate-500',  dateBg:'bg-slate-200 text-slate-700'  },
-        };
-
-        const IcTrend = (p) => <Ic {...p}><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></Ic>;
-        const IcUsers = (p) => <Ic {...p}><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></Ic>;
-        const IcShield = (p) => <Ic {...p}><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></Ic>;
-        const IcTrophy = (p) => <Ic {...p}><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></Ic>;
-        const IcTable = (p) => <Ic {...p}><path d="M12 3v18"/><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M3 15h18"/></Ic>;
-        const IcCalCheck = (p) => <Ic {...p}><rect width="18" height="18" x="3" y="4" rx="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/><path d="m9 16 2 2 4-4"/></Ic>;
-        const IcClip = (p) => <Ic {...p}><rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4M12 16h4M8 11h.01M8 16h.01"/></Ic>;
-        const pillarIcons = [IcUsers, IcTrend, IcShield];
-
-        return (
-            <div className="px-6 md:px-10 py-6 max-w-7xl mx-auto">
-                {/* Header strip */}
-                <div className="bg-slate-900 rounded-2xl px-8 py-5 mb-8 flex items-center justify-between gap-6">
-                    <div>
-                        <p className="text-[10px] text-slate-400 uppercase tracking-widest mb-1" style={{fontWeight:700}}>Actinver Digital 2026</p>
-                        <h2 className="text-white text-lg leading-snug" style={{fontWeight:700}}>Modelo de Generación de Valor Económico</h2>
-                        <p className="text-blue-300 text-xs mt-1 border-l-2 border-blue-500 pl-2">Transición de modelo de "entrega" a un modelo de "Adopción e Impacto".</p>
-                    </div>
-                    <div className="flex-shrink-0 text-right">
-                        <p className="text-[10px] text-slate-400 uppercase tracking-widest mb-1">Meta</p>
-                        <p className="text-yellow-400 text-sm" style={{fontWeight:700}}>Principalidad & Rentabilidad</p>
-                    </div>
-                </div>
-
-                {/* Three pillars */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                    {pillars.map((p, idx) => {
-                        const t = themeStyles[p.theme];
-                        const PIcon = pillarIcons[idx];
-                        return (
-                            <div key={idx} className={`bg-white rounded-xl border-l-4 ${t.accent} shadow-sm flex flex-col overflow-hidden`}>
-                                <div className="p-5 flex-grow flex flex-col">
-                                    {/* Header */}
-                                    <div className="flex justify-between items-start mb-4">
-                                        <div>
-                                            <h3 className="text-base text-slate-900 leading-tight" style={{fontWeight:700}}>{p.title}</h3>
-                                            <p className={`text-[10px] font-700 uppercase tracking-wider mt-0.5 ${t.text}`} style={{fontWeight:700}}>{p.subtitle}</p>
-                                        </div>
-                                        <div className={`${t.iconBg} text-white p-2.5 rounded-lg shadow-sm flex-shrink-0 ml-3`}>
-                                            <PIcon size={18} className="text-white" style={{stroke:'white'}}/>
-                                        </div>
-                                    </div>
-                                    {/* Tesis */}
-                                    <div className="mb-4 bg-slate-50 p-3 rounded-lg border border-slate-100">
-                                        <p className="text-[10px] font-700 text-slate-400 uppercase mb-1.5" style={{fontWeight:700}}>Tesis Financiera</p>
-                                        <p className="text-xs text-slate-600 italic leading-relaxed">"{p.thesis}"</p>
-                                    </div>
-                                    {/* Drivers */}
-                                    <div className="mb-4 flex-grow">
-                                        <p className="text-[10px] font-700 text-slate-400 uppercase mb-2 flex items-center gap-1" style={{fontWeight:700}}>
-                                            <IcTarget size={10}/> Drivers (Proyectos Clave)
-                                        </p>
-                                        <ul className="space-y-1.5">
-                                            {p.drivers.map((d, i) => (
-                                                <li key={i} className="flex items-center justify-between text-xs text-slate-700 border-b border-dashed border-slate-100 pb-1 last:border-0">
-                                                    <div className="flex items-center gap-1.5">
-                                                        <div className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${t.iconBg}`}/>
-                                                        <span>{d.name}</span>
-                                                    </div>
-                                                    <span className={`text-[9px] font-700 px-1.5 py-0.5 rounded ml-2 whitespace-nowrap ${t.dateBg}`} style={{fontWeight:700}}>{d.date}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                    {/* KPIs */}
-                                    <div>
-                                        <p className="text-[10px] font-700 text-slate-400 uppercase mb-2 flex items-center gap-1" style={{fontWeight:700}}>
-                                            <IcTrophy size={10}/> Objetivos Anuales 2026
-                                        </p>
-                                        <div className="space-y-1.5">
-                                            {p.kpis.map((k, i) => (
-                                                <div key={i} className={`px-3 py-2 rounded border ${t.bg} ${t.border} flex justify-between items-center`}>
-                                                    <div>
-                                                        <span className={`text-xs font-700 ${t.text}`} style={{fontWeight:700}}>{k.label}</span>
-                                                        <p className="text-[9px] text-slate-400 uppercase tracking-wide">Meta Anual</p>
-                                                    </div>
-                                                    <span className={`text-sm font-700 ${t.text} bg-white/50 px-2 py-1 rounded shadow-sm ml-2`} style={{fontWeight:700}}>{k.detail}</span>
-                                                </div>
-                                            ))}
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* Footer P&L */}
-                                <div className="bg-slate-900 text-white px-5 py-3 flex items-center justify-between">
-                                    <span className="text-[10px] font-700 text-slate-400 uppercase tracking-wider" style={{fontWeight:700}}>Impacto en P&L</span>
-                                    <span className="text-sm font-700 text-white" style={{fontWeight:700}}>{p.pnlImpact}</span>
-                                </div>
-                            </div>
-                        );
-                    })}
-                </div>
-
-                {/* Gobierno */}
-                <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden mb-6 border-t-4 border-t-amber-500">
-                    <div className="px-6 py-4 border-b border-slate-100 bg-slate-50 flex items-center justify-between">
-                        <div className="flex items-center gap-2">
-                            <IcCalCheck size={16} className="text-amber-600" style={{stroke:'#d97706'}}/>
-                            <h3 className="font-700 text-slate-800 text-sm" style={{fontWeight:700}}>Modelo de Gobierno y Seguimiento</h3>
-                        </div>
-                        <span className="text-[10px] text-slate-400">Fuente: Data Lake Corporativo</span>
-                    </div>
-                    <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div className="flex gap-4">
-                            <div className="bg-slate-100 p-3 rounded-full h-fit flex-shrink-0">
-                                <IcClip size={16} className="text-slate-600" style={{stroke:'#475569'}}/>
-                            </div>
-                            <div>
-                                <h4 className="font-700 text-slate-800 mb-1 text-sm" style={{fontWeight:700}}>Revisión Operativa (MBR)</h4>
-                                <span className="text-[10px] font-700 bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full mb-2 inline-block" style={{fontWeight:700}}>Mensual</span>
-                                <p className="text-xs text-slate-600 mb-2">Sesión táctica con Product Owners y Business Management.</p>
-                                <ul className="text-[11px] text-slate-500 list-disc pl-4 space-y-1">
-                                    <li>Seguimiento de avance de proyectos (Drivers).</li>
-                                    <li>Corrección de desviaciones en KPIs secundarios.</li>
-                                    <li><strong>Entregable:</strong> Flash Report de Avance.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="flex gap-4 border-l-2 border-slate-100 pl-8">
-                            <div className="bg-amber-50 p-3 rounded-full h-fit flex-shrink-0">
-                                <IcTarget size={16} style={{stroke:'#d97706'}}/>
-                            </div>
-                            <div>
-                                <h4 className="font-700 text-slate-800 mb-1 text-sm" style={{fontWeight:700}}>Revisión Estratégica (QBR)</h4>
-                                <span className="text-[10px] font-700 bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full mb-2 inline-block" style={{fontWeight:700}}>Trimestral</span>
-                                <p className="text-xs text-slate-600 mb-2">Sesión ejecutiva con Dirección de Finanzas.</p>
-                                <ul className="text-[11px] text-slate-500 list-disc pl-4 space-y-1">
-                                    <li>Validación de impacto real en P&L.</li>
-                                    <li>Ajuste de prioridades de inversión (CAPEX).</li>
-                                    <li><strong>Entregable:</strong> Presupuesto aprobado y prioridades.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Summary table */}
-                <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden mb-4">
-                    <button onClick={() => setIsTableOpen(o => !o)} className="w-full px-6 py-4 bg-slate-50 hover:bg-slate-100 border-b border-slate-200 flex items-center justify-between transition-colors">
-                        <div className="flex items-center gap-2">
-                            <IcTable size={16} style={{stroke:'#2563eb'}}/>
-                            <h3 className="font-700 text-slate-800 text-sm" style={{fontWeight:700}}>Tablero Resumen de Impacto 2026</h3>
-                        </div>
-                        <span className="text-[10px] font-700 text-slate-500 uppercase tracking-wide flex items-center gap-1" style={{fontWeight:700}}>
-                            {isTableOpen ? 'Ocultar' : 'Ver Detalle'}
-                            {isTableOpen ? <IcChevUp size={12}/> : <IcChevDown size={12}/>}
-                        </span>
-                    </button>
-                    <div className={`accordion-content ${isTableOpen ? 'open' : ''}`}>
-                        <div className="overflow-x-auto">
-                            <table className="w-full text-xs text-left">
-                                <thead className="text-[10px] text-slate-500 uppercase bg-slate-50/50">
-                                    <tr>
-                                        <th className="px-6 py-3 font-700" style={{fontWeight:700}}>Pilar</th>
-                                        <th className="px-6 py-3 font-700" style={{fontWeight:700}}>Impacto Contable</th>
-                                        <th className="px-6 py-3 font-700 text-blue-700" style={{fontWeight:700}}>Meta Anual (KPI Norte)</th>
-                                        <th className="px-6 py-3 font-700 text-slate-700" style={{fontWeight:700}}>KPIs Secundarios</th>
-                                    </tr>
-                                </thead>
-                                <tbody className="divide-y divide-slate-100">
-                                    <tr className="hover:bg-slate-50">
-                                        <td className="px-6 py-3 font-700 text-blue-700" style={{fontWeight:700}}><div className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-blue-500"/>Principalidad</div></td>
-                                        <td className="px-6 py-3 text-slate-600">Costo de Fondeo (Intereses)</td>
-                                        <td className="px-6 py-3 font-700 text-slate-800 bg-blue-50/30" style={{fontWeight:700}}>70% MAU / 50% Transaccionales</td>
-                                        <td className="px-6 py-3 text-slate-600"><ul className="list-disc pl-4 space-y-1"><li><strong>Saldo Promedio Vista:</strong> Tasa de Fondeo</li><li><strong>Portabilidad:</strong> # de nóminas</li><li><strong>Pagos Promedio:</strong> Recurrencia mensual</li><li><strong>NPS Digital:</strong> Satisfacción y lealtad</li></ul></td>
-                                    </tr>
-                                    <tr className="hover:bg-slate-50">
-                                        <td className="px-6 py-3 font-700 text-purple-700" style={{fontWeight:700}}><div className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-purple-500"/>Ingreso Directo</div></td>
-                                        <td className="px-6 py-3 text-slate-600">Margen Financiero + Comisiones</td>
-                                        <td className="px-6 py-3 font-700 text-slate-800 bg-purple-50/30" style={{fontWeight:700}}>25% Tasa de Conversión General</td>
-                                        <td className="px-6 py-3 text-slate-600"><ul className="list-disc pl-4 space-y-1"><li><strong>Revenue Generado:</strong> Margen + Fees</li><li><strong>Monto Colocado:</strong> Cartera crédito activa</li><li><strong>*Primas Emitidas:</strong> Venta seguros</li><li><strong>Actinver Trade:</strong> P&L objetivo</li></ul></td>
-                                    </tr>
-                                    <tr className="hover:bg-slate-50">
-                                        <td className="px-6 py-3 font-700 text-slate-700" style={{fontWeight:700}}><div className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-slate-500"/>Eficiencia</div></td>
-                                        <td className="px-6 py-3 text-slate-600">Gastos de Operación (OpEx)</td>
-                                        <td className="px-6 py-3 font-700 text-slate-800 bg-slate-50/30" style={{fontWeight:700}}>-50% Contacto CAT (Token)</td>
-                                        <td className="px-6 py-3 text-slate-600"><ul className="list-disc pl-4 space-y-1"><li><strong>% Adopción Digital:</strong> Migración a Banca Móvil</li><li><strong>Tasa de Fraude:</strong> Pérdidas evitadas</li><li><strong>Call Deflection:</strong> Menos llamadas operativas al CAT</li></ul></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-                <p className="text-center text-[10px] text-slate-400 italic pb-4">Documento confidencial para uso interno de Actinver.</p>
-            </div>
-        );
-    };
 
     // ── APP ──────────────────────────────────────────────────────────────────
     const App = () => {
@@ -1059,7 +809,7 @@
                             </div>
                             <div>
                                 <h1 className="text-slate-900 leading-none" style={{fontWeight:800, fontSize:'20px', letterSpacing:'-0.02em'}}>Actinver Digital</h1>
-                                <p className="text-slate-400 leading-none mt-0.5" style={{fontWeight:500, fontSize:'11px'}}>Roadmap 2026 · Actualización Abr 26</p>
+                                <p className="text-slate-400 leading-none mt-0.5" style={{fontWeight:500, fontSize:'11px'}}>Roadmap 2026</p>
                             </div>
                         </div>
                         <div className="toggle-pill">
@@ -1069,20 +819,18 @@
                             <button className={view === 'status' ? 'active' : ''} onClick={() => setView('status')}>
                                 📋 Status
                             </button>
-                            <button className={view === 'valor' ? 'active' : ''} onClick={() => setView('valor')}>
-                                💡 Modelo de Valor
-                            </button>
+
                         </div>
                     </div>
                 </div>
 
                 {/* Content */}
                 <div className={view === 'gantt' ? '' : 'py-4'}>
-                    {view === 'gantt' ? <GanttView/> : view === 'status' ? <StatusView/> : <ValorView/>}
+                    {view === 'gantt' ? <GanttView/> : <StatusView/>}
                 </div>
 
                 <footer className="text-center py-6">
-                    <p className="text-[10px] text-slate-400 italic">Plan tentativo sujeto a cambios por priorización, capacidad técnica y reestimaciones.</p>
+                    <p className="text-[10px] text-slate-400 italic">Actinver Digital 2026 · Plan tentativo sujeto a cambios.</p>
                 </footer>
             </div>
         );
